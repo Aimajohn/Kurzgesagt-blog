@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aimajoke</title>
+    </head>
+    <body>
+         <header>
+            
+                <nav>
+                    <ul>
+                        <li>Portafolio</li>
+                        <li>Trabajos</li>
+                        <li>Trabajemos Juntos</li>
+                    </ul>
+                </nav>
+        </header>
+        <section>Sección Principal</section>
+        <section>Sección Portafolio</section>
+        <section>Sección Contacto</section>
+        <footer>Footer</footer>
+    </body>
+
+</html>
