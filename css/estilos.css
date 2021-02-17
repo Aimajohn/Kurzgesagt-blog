@@ -1,0 +1,16 @@
+ header{
+     text-align: left;
+     background-color: honeydew;<style>
+     }
+ body{ 
+     text-align: center;
+    background-color: grey;
+    }
+#menu {
+     padding:0; text-align: center
+    ;
+ }
+#menu li{
+     display:inline; 
+}
+   
