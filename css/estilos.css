@@ -1,16 +1,80 @@
- header{
-     text-align: left;
-     background-color: honeydew;<style>
-     }
- body{ 
+header{/*oye no juegues aqui*/
+     background-color: #021032;<style>
      text-align: center;
-    background-color: grey;
+     padding: 0px;
+     }
+.header a{
+    text-decoration: none;
+    color: ivory;
+    border: 40px solid transparent;
+    text-align: center;
     }
-#menu {
-     padding:0; text-align: center
-    ;
- }
-#menu li{
-     display:inline; 
+.header a:hover{
+        opacity: .8;
+    }
+ .navbar{
+    background-color: #01091f;
+     text-align-last: center;
+    -ms-text-align-last: center;
+     padding:0; 
+      height: 40px;
+     line-height: 40px;
+       }
+ body{ 
+     font-family: inherit,Helvetica, sans-serif;
+     background-color: #ffffff;
+     color: rgb(29, 29, 29);
+     margin: 0mm;
+    }
+h1,h2, h3,h4,h5,h6{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    }
+h1{
+    font-family: Heebo, Poppins, sans-serif;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: left;
+    font-weight: 700;
+    color: floralwhite;
+    margin:0px 600px 50px 40px;
+    }
+h1 strong {
+    color: #6b00de;
+    }
+
+ #menu li{
+        display:inline; 
 }
-   
+.portfolio {
+    background-color: #fafafa;
+}
+.project{
+    border: 5px solid ;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    
+}
+ .project div{
+        width: 610px
+    }
+
+.logo{
+    text-align-last: center;
+}
+.hero {
+
+    height: 300px;
+    background-image: url(../images/hero.jpg);
+    background-size: 600px 300px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-color:#021032;
+    display: flex;
+    align-items:center
+}
+.event {
+    margin-left: 50px;
+}
