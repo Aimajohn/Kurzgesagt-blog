@@ -1,79 +1,100 @@
-header{/*oye no juegues aqui*/
-     background-color: #021032;<style>
+body{ 
+    font-family: inherit, sans-serif;
+    background-color: #fff;
+    color: rgb(29, 29, 29);
+    margin:0;
+      }
+.header{/*oye no juegues aqui*/
+     background-color: #020a20;<style>
      text-align: center;
-     padding: 0px;
+     height: 110px;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
      }
+     .navbar{
+         height: inherit;
+     }
+    .header ol {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        margin: 0;
+        padding-left: 0;
+    }
+ol li{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
 .header a{
-    text-decoration: none;
-    color: ivory;
-    border: 40px solid transparent;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    color: #fff;
+    padding: 0 20px;
+
     }
 .header a:hover{
-        opacity: .8;
+     opacity: .8;
+     font-size: 10pt;
+     height: inherit;
     }
- .navbar{
-    background-color: #01091f;
-     text-align-last: center;
-    -ms-text-align-last: center;
-     padding:0; 
-      height: 40px;
-     line-height: 40px;
-       }
- body{ 
-     font-family: inherit,Helvetica, sans-serif;
-     background-color: #ffffff;
-     color: rgb(29, 29, 29);
-     margin: 0mm;
+.logo{
+        text-align-last: center;
+        padding: 10px 0;
+        margin: 0px 50px 0px 0px;
+        height: 90px;
     }
+
 h1,h2, h3,h4,h5,h6{
     font-family: Poppins, sans-serif;
     font-weight: 600;
     }
-h1{
+    .hero {
+
+        height: 250px;
+        background-image: url(../images/hero.jpg);
+        background-size: 480px 250px;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-color:#021032;
+        display: flex;
+        align-items:center
+    }
+.hero h1 strong {
+     color: #6b00de;
+    }  
+.hero h1{
     font-family: Heebo, Poppins, sans-serif;
     font-size: 40px;
     line-height: 120%;
     text-align: left;
     font-weight: 700;
     color: floralwhite;
-    margin:0px 600px 50px 40px;
+    margin:0px 600px 0px 40px;
     }
-h1 strong {
-    color: #6b00de;
-    }
-
- #menu li{
-        display:inline; 
-}
 .portfolio {
     background-color: #fafafa;
 }
+.portfolio h2{
+    margin-left: 50px;
+}
 .project{
-    border: 5px solid ;
+    border: 15px solid ;
     border-radius: 10px;
-    margin: 50px;
-    padding: 50px;
-    background-color: rgb(255, 255, 255);
-    
+    margin: 30px;
+    padding: 25px;
+    background-color: rgb(218, 218, 218);
+    box-sizing: content-box;
+    height: 275px;
+    display: flex;
 }
  .project div{
-        width: 610px
+        width: 610px;
     }
-
-.logo{
-    text-align-last: center;
-}
-.hero {
-
-    height: 300px;
-    background-image: url(../images/hero.jpg);
-    background-size: 600px 300px;
-    background-position-x: right;
-    background-repeat: no-repeat;
-    background-color:#021032;
-    display: flex;
-    align-items:center
+.project-imageContainer{
+    margin:auto;
 }
 .event {
     margin-left: 50px;
