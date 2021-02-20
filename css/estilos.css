@@ -1,19 +1,27 @@
 body{ 
-    font-family: inherit, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     background-color: #fff;
     color: rgb(29, 29, 29);
     margin:0;
+    padding-top: 70px;
       }
 .header{/*oye no juegues aqui*/
-     background-color: #020a20;<style>
+     background-color: #020a20;
      text-align: center;
-     height: 110px;
+     height: 70px;
      display:flex;
+     flex-wrap:wrap;
      align-items: center;
      justify-content: space-between;
+     width: 100%;
+     top: 0;
+     left:0;
+     position: fixed;
+     z-index: 99;
      }
      .navbar{
          height: inherit;
+         margin-right: 20px;
      }
     .header ol {
         display: flex;
@@ -37,27 +45,28 @@ ol li{
     }
 .header a:hover{
      opacity: .8;
-     font-size: 10pt;
      height: inherit;
     }
 .logo{
         text-align-last: center;
-        padding: 10px 0;
+        padding: 5px 0;
         margin: 0px 50px 0px 0px;
-        height: 90px;
+        height: 60px;
+        width
     }
 
 h1,h2, h3,h4,h5,h6{
-    font-family: Poppins, sans-serif;
+    font-family:Heebo, Poppins, sans-serif;
     font-weight: 600;
+    margin:0;
     }
     .hero {
 
         height: 250px;
-        background-image: url(../images/hero.jpg);
-        background-size: 480px 250px;
-        background-position-x: right;
-        background-repeat: no-repeat;
+        /* background-image: url(../images/hero.jpg); */
+        /* background-size: 480px 250px; */
+        /* background-position-x: right; */
+        /* background-repeat: no-repeat; */
         background-color:#021032;
         display: flex;
         align-items:center
@@ -72,30 +81,227 @@ h1,h2, h3,h4,h5,h6{
     text-align: left;
     font-weight: 700;
     color: floralwhite;
-    margin:0px 600px 0px 40px;
+    padding:0px 00px 0px 40px;
     }
 .portfolio {
     background-color: #fafafa;
+    padding: 20px 50px;
 }
-.portfolio h2{
-    margin-left: 50px;
+h2{
+    color:#6b00de;
+    font-family: Heebo, Poppins, sans-serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 700;
+    background-color: #fafafa;
 }
 .project{
-    border: 15px solid ;
+    border: 2px solid rgb(85, 85, 85);
     border-radius: 10px;
-    margin: 30px;
-    padding: 25px;
-    background-color: rgb(218, 218, 218);
-    box-sizing: content-box;
-    height: 275px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
 }
- .project div{
-        width: 610px;
-    }
+.project h6{
+    font-size: 15px;
+}
+.project-title, .project-date, .project-url, .project-description {
+    margin: 15px 0;
+    color: rgb(17, 17, 17);
+}
+.project-github{
+    color: gray;
+    margin: 15px 0;
+}
+.project strong{
+font-size: 15px;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+}
+.project-description{
+    font-size: 20px;
+}
 .project-imageContainer{
     margin:auto;
+    padding: 0 20px;
+}
+.project-imagegit{
+    padding:50px 0;
+}
+.xp-title{
+  text-align: center;
+  padding: 30px 0;
+}
+.xp{
+    background-color: #fafafa;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding-bottom: 60px;
 }
 .event {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+margin:20px;
+border-radius: 15px;
+background-color: #e6e6e6;
+overflow: hidden;
+flex-shrink: 0;
+}
+.event-imageContainer{
+    margin: 0;
+    height: 340px;
+    width: 500px;
+}
+
+.event img{
+    height: 340px;
+    width: 500px;
+    object-fit: cover;
+}
+.event-detail{
+    padding: 20px;
+    width: 400px;
+    margin: 0;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 2px solid #282828;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    
+}
+.event-description{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.event-url{
+    border: 3px solid;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #6b00de;
+    font-family: Heebo, Poppins, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+.contact{
+    background-color:#021032 ;
+    color:floralwhite;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    display:flex;
+    align-items: center;
+}
+.social-link{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+.social-link.instagram{
+    background-image: url(/images/instagram.svg);
+}
+.social-link.github{
+    background-image: url(/images/github.svg);
+}
+.social-link.youtube{
+    background-image: url(/images/youtube.svg);
+}
+.social-link.twitter{
+    background-image: url(/images/twitter.svg);
+}
+.form-email{
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+.form-email h3{
+    font-family: Heebo, Poppins, sans-serif;
+    font-size: 25px;
+}
+.form-email input{
+    padding: 0 40px ;
+    height: 30px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-image: url(/images/envelope.svg);
+    background-size: 20px;
+    background-position-y: 50%;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+}
+.form-email button{
+    display: block;
+    background-color: transparent;
+    color: floralwhite;
+    margin-top: 15px;
+    padding: 5px 30px;
+    border: solid floralwhite;
+    border-radius: 5px;
+}
+.form-email button:hover{
+    display: block;
+    background-color: floralwhite;
+    color: #282828;
+    margin-top: 15px;
+    padding: 5px 30px;
+    border: solid #282828;
+    border-radius: 5px;
+}
+.footer{
+    background-color:#020a20 ;
+    color: floralwhite;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+}
+.footer p img{
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+.footer p{
+    margin:0;
+}
+.footer a{
+    text-decoration: none;
+    color: floralwhite;
+}
+.container{
+    display: inherit;
+    justify-content: inherit;
+    margin: 0 auto;
+    width: 1080px;
+    flex-wrap: wrap;
+    align-items: inherit;
+}
+.container-hero{
+    display: inherit;
+    justify-content: space-between;
+    align-items: inherit;
+    margin: 0 auto;
+    width: 1080px;
+    height: 250px;
+}
+.hero-image{
+    margin: 0;
 }
