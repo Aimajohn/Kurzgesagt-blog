@@ -2,6 +2,7 @@
 h1,h2,h3,h4,h5,h6{margin: 1em 0}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 body{ 
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .home-body{
@@ -11,10 +12,15 @@ body{
     right: 0;
     left: 0;
 }
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+
+}
 a{
     text-decoration: none;
     display: inline;
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
 }
 header{
     width: 100%;
@@ -43,9 +49,12 @@ header nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+header nav .nav-logo-container a{
+    height: 80px;
+}
 header nav .nav-logo-container img{
+    height: 80px;
     width: 350px;
-    opacity: 94%;
 }
 header nav div{
     margin: 0 20px;
@@ -85,7 +94,7 @@ header nav .nav-sobremi a:hover{
     font-weight: 500;
     font-size: 40pt;
     text-align: center;
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
     letter-spacing: 10px;
     align-self: center;
     margin-top: -30px;
@@ -107,15 +116,18 @@ header nav .nav-sobremi a:hover{
     transform: scale(1.1);
 }
 
-.main-blogs{
-    background: linear-gradient(to right, #000 rgb(25, 7, 68));
+.main-blogs, .main-perfil {
+    background: linear-gradient(to right, rgb(0, 0, 0) , rgb(25, 7, 68));
+    margin-top: -80px;
+    padding-top: 80px;
     display: grid;
 }
-.blogs-last-post-container{
+.blogs-last-post-container, .perfil-description-container{
     background-color: #efefef;
     padding: 0px 50px 40px;
 }
 .blogs-last-post{
+    color: black;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
@@ -127,14 +139,16 @@ header nav .nav-sobremi a:hover{
 .blogs-last-post-img img{
     width: 85%;
 }
-.blogs-last-post-ingo{
+.blogs-last-post-info, .perfil-hero-info{
     grid-column: 2;
+    color: black;
 }
 .blogs-last-post p{
     margin-bottom: 35px;
 }
-.blog-post-container{
-    padding: 0 50px 40px;
+.blogs-posts-container{
+    display: flex;
+    justify-items: center;
 }
 .blogs-posts-container h3{
     border-bottom: 1px solid #efefef;
@@ -142,8 +156,142 @@ header nav .nav-sobremi a:hover{
     text-align: center;
 }
 .blogs-button{
-    border: solid 2px #4285f4;
+    border: solid 2px white;
+    background-color:#4285f4 ;
     padding:10px 15px ;
     font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.blogs-button:hover {
+	background-color: #31007d;
+    cursor:pointer;
+}
+.post-container{
+    color: white;
+    display: inline-block;
+    max-width: 30%;
+    margin: 0 25px 50px 0px;
+    padding-bottom: 50px;
+}
+.post-container p{
+    margin-bottom: 35px;
+}
+.post-container img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: thistle;
+    border-top: 35px solid #31007d;
+    text-align: center;
+}
+footer p{
     color: black;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.blogpost-image-container img{
+    width:100% ;
+}
+.blogpost-content-container{
+    padding: 0 50px 40px;
+}
+.blogpost-content-container div h3{
+    border-bottom: solid 1px whitesmoke;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    margin: 0;
+    padding: 20px 0;
+}
+.blogpost-content-container div article h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 30px 0;
+}
+.blogpost-content-container div article{
+    line-height: 1.8em;
+    color: rgb(218, 218, 218);
+}
+.main-blogs section .blogpost-detail{
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+}
+.main-contact-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    background-color: whitesmoke;
+    height: 200px;
+    color: rgb(0, 0, 0);
+}
+main section .contact-images{
+    width: 100px;
+}
+.main-contact-container .contact-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+}
+.main-contact-container .contact-right{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+.main-contact-container div .contact-info{
+    margin-left:30px;
+}
+ .contact-info a{
+    color: #000;
+    font-weight: 700;
+    border-bottom:2px solid black;
+    height: 25px;
+}
+.contact-info p{
+    margin-top: 10px;
+}
+
+.perfil-description-container{
+    padding-top: 40px;
+}
+.perfil-hero{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+.perfil-hero-img{
+    grid-column: 1;
+    width: auto;
+}
+.perfil-hero-img img{
+    width: 85%;
+}
+.perfil-hero-info p{
+    margin-bottom: 35px;
+}
+.perfil-projects h2{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid whitesmoke;
+}
+.main-perfil .perfil-projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 980px;
+    margin: 0 auto 50px;
+}
+ .perfil-projects-container p{
+     max-width: 300px;
+}
+.perfil-projects-container h3{
+    font-size: 17px;
+}
+.box1{
+    grid-column: 1;
+}
+.perfil-project-box .box2{
+    grid-column: 2;}
+ .box3{
+    grid-column: 3;
 }
