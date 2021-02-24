@@ -1,4 +1,4 @@
-@media (max-width: 900px){
+@media (max-width: 980px){
     .blogs-last-post{
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
@@ -10,12 +10,24 @@
     grid-column: 1;
     grid-row: 3;
     }
-    .blogs-posts-container .post-container{
-        max-width: 45%;
+    .blogs-posts-container .grid-posts{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
+    }
+    .perfil-projects-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+    .perfil-main-container .perfil-container {
+        display: block;
     }
 }
 @media (max-width: 600px){
     .blogs-posts-container .post-container{
         max-width: 90%;
+    }
+    .blogs-posts-container .grid-posts{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
     }
 }

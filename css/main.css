@@ -117,13 +117,13 @@ header nav .nav-sobremi a:hover{
 }
 
 .main-blogs, .main-perfil {
-    background: linear-gradient(to right, rgb(0, 0, 0) , rgb(25, 7, 68));
+    background: linear-gradient(to right, rgb(11, 11, 37) , rgb(25, 7, 68));
     margin-top: -80px;
     padding-top: 80px;
     display: grid;
 }
 .blogs-last-post-container, .perfil-description-container{
-    background-color: #efefef;
+    background-color: whitesmoke;
     padding: 0px 50px 40px;
 }
 .blogs-last-post{
@@ -147,8 +147,7 @@ header nav .nav-sobremi a:hover{
     margin-bottom: 35px;
 }
 .blogs-posts-container{
-    display: flex;
-    justify-items: center;
+    padding: 0 50px;
 }
 .blogs-posts-container h3{
     border-bottom: 1px solid #efefef;
@@ -169,7 +168,7 @@ header nav .nav-sobremi a:hover{
 .post-container{
     color: white;
     display: inline-block;
-    max-width: 30%;
+    max-width: 100%;
     margin: 0 25px 50px 0px;
     padding-bottom: 50px;
 }
@@ -216,6 +215,7 @@ footer p{
 .main-blogs section .blogpost-detail{
     background-color: rgba(0, 0, 0, 0.37);
     border-radius: 10px;
+    padding: 0 30px;
 }
 .main-contact-container{
     display: grid;
@@ -298,7 +298,7 @@ main section .contact-images{
 } */
 .perfil-main-container{
     background-color: #f5f5f5;
-    padding: 70px 40px;
+    padding: 50px 40px;
     margin-bottom: 50px;
     color: black;
 }
@@ -323,5 +323,11 @@ main section .contact-images{
 }
 .project-container{
     padding: 0 10px;
+    margin-bottom: 50px;
 
+}
+.grid-posts{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
