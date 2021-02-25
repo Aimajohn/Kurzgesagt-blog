@@ -54,9 +54,13 @@
     <main class="main-perfil">
         <section class="perfil-main-container">
             <div class="grid-container perfil-container">
-                <div>
+                <figure>
                     <img src="https://imagizer.imageshack.com/v2/xq90/922/gO0l06.jpg" alt="">
-                </div>
+                </figure>
+<!--                <video controls preload="auto">
+                    <source src="/images/pagina-web.mp4">
+                        <source src="./images/pagina-web.mv4"> 
+                </video> -->
                 <div>
                     <h2>Hola!</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officiis quisquam tempora est nostrum, illum doloribus debitis laborum perferendis repellat nihil veritatis natus esse, ut soluta blanditiis amet a hic!</p>
@@ -87,6 +91,39 @@
                     </article>
                 </div>
             </div>
+        </section>
+        <section>
+            <form action="">
+                <label for="name">
+                    <span>cual tu nombre?</span>
+                    <input type="text" name="name" id="name" autocomplete="name" required>
+                </label>
+                <label for="country">
+                    <span>De donde eres?</span>
+                </label>
+                    <input list="country">
+                    <datalist id="country">
+                        <option value="Ecuador"></option>
+                        <option value="Mexico"></option>
+                        <option value="Colombia"></option>
+                        <option value="web-standarts"></option>
+                    </datalist>
+                
+                <label for="email">
+                    <span>escribe tu email</span>
+                    <input type="email" name="enmail" id="email" autocomplete="email">
+                </label>
+                <label for="cp">
+                    <span>direccion postal</span>
+                    <input type="text" name="cp" id="cp" autocomplete="postal-code">
+                </label>
+                <label for="birthday">
+                    <span>birthday</span>
+                    <input type="number" name="birthday" id="birthday" autocomplete="bday-day">
+                </label>
+                <input type="submit" value="Enviar bebes xd">
+                <button type="submit">Enviar baby</button>
+            </form>
         </section>
         <section class="main-contact-container">
             <div class="contact-left">
