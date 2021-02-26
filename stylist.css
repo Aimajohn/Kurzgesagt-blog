@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 50px;
+    width: 100%;
+}
+nav div{
+    margin: 0 auto;
+    border: red 1px solid;
+    margin: 0;
+    display: table;
+}
+nav li{
+    list-style: none;
+    display: inline;
+}
