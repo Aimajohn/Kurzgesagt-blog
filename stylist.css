@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+html{
+    box-sizing: border-box;
+    :root {
+        --principal:
+    }
+}
 header{
     height: 50px;
     width: 100%;
