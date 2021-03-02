@@ -86,10 +86,10 @@ header nav .nav-sobremi a:hover{
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
     margin-top: -80px;
-    background-image: url(https://i.gzn.jp/img/2020/05/26/the-anthropocene-reviewed/0020.png);
+    background-image: url(/images/wallpaper.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position:top;
 }
 .home-main section{
     display: grid;

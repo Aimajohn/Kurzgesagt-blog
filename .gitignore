@@ -1,1 +1,5 @@
-images/
+*.png
+*.jpg
+*.Identifier
+*.mp4
+*.rtf
