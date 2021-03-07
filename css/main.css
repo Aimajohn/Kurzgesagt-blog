@@ -90,7 +90,7 @@ header nav .nav-sobremi a:hover{
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
     margin-top: -80px;
-    background-image: url(/images/wallpaper.svg);
+    background-image: url(../../Kurzgesagt-blog/images/wallpaper.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
